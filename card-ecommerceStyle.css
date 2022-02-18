@@ -4,6 +4,11 @@
   margin: 0px;
   padding: 0px;
 }
+body {
+  background-image: url(https://images.unsplash.com/photo-1564352969556-5825e542fa6b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 a {
   list-style-type: none;
   font-family: Roboto, sans-serif;
@@ -33,6 +38,7 @@ li:hover {
   justify-content: center;
 }
 .title {
+  padding: 20px;
   margin-left: auto;
   margin-right: auto;
   width: 1100px;
@@ -40,6 +46,7 @@ li:hover {
   font-size: 50px;
   font-family: Oswald, sans-serif;
   transition: all 0.3s ease 0s;
+  color: white;
 }
 .title:hover {
   transform: scale(1.1);
@@ -48,31 +55,42 @@ li:hover {
   width: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 25px;
   grid-row-gap: 30px;
   margin: 5px;
 }
 .card-container {
+  border-radius: 5px;
   display: flex;
   width: 454px;
   height: 280px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
 }
-.marcas-img,
-.apple-watch,
-.oneplus-watch {
+.img-card {
+  border-radius: 5px 0 0px 5px;
+}
+.amazfit-watch {
   position: relative;
-  width: 150px;
-  height: 150px;
-  left: 40px;
-  bottom: 215px;
-}
-.apple-watch {
   width: 220px;
   height: 220px;
   bottom: 250px;
   left: 5px;
+}
+.samsung-watch {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  bottom: 250px;
+  left: 15px;
+}
+.apple-watch {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  bottom: 260px;
+  left: 0px;
+  right: 0;
 }
 .oneplus-watch {
   position: relative;
@@ -90,10 +108,10 @@ li:hover {
 }
 .huawei-watch {
   position: relative;
-  width: 200px;
-  height: 200px;
-  bottom: 240px;
-  left: 15px;
+  width: 180px;
+  height: 210px;
+  bottom: 250px;
+  left: 25px;
 }
 .description {
   padding: 15px;
@@ -129,6 +147,7 @@ li:hover {
   border-radius: 6px;
   border: 0;
   transition: all 0.5s;
+  cursor: pointer;
 }
 button:hover {
   transform: scale(1.1);
@@ -146,4 +165,5 @@ footer {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
+  color: white;
 }
