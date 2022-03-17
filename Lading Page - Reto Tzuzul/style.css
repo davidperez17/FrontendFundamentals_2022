@@ -282,7 +282,7 @@ a {
   background-color: #dddcdcbb;
 }
 
-.testimonial-cards > div {
+.testimonial__cards {
   text-align: center;
 }
 
@@ -299,8 +299,8 @@ a {
 }
 
 .button__scroll {
-  position: sticky;
-  left: 100%;
+  position: fixed;
+  left: 98%;
   bottom: 20px;
   cursor: pointer;
   padding: 10px;
@@ -353,7 +353,8 @@ a {
     height: 30px;
   }
   .button__scroll {
-    font-size: 3rem;
+    left: 89%;
+    font-size: 2rem;
   }
 }
 
@@ -366,6 +367,6 @@ a {
     transform: scaleX(-1);
   }
   .button__scroll {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
