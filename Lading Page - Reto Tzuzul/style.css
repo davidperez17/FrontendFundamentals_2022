@@ -298,6 +298,14 @@ a {
   text-align: center;
 }
 
+.button__scroll {
+  position: sticky;
+  left: 100%;
+  bottom: 20px;
+  cursor: pointer;
+  padding: 10px;
+}
+
 /* * --------RESPONSIVE DESING--------- */
 @media screen and (max-width: 786px) {
   .header__list {
@@ -344,6 +352,9 @@ a {
     width: 30px;
     height: 30px;
   }
+  .button__scroll {
+    font-size: 3rem;
+  }
 }
 
 @media screen and (max-width: 444px) {
@@ -353,5 +364,8 @@ a {
     width: 100px;
     height: 130px;
     transform: scaleX(-1);
+  }
+  .button__scroll {
+    font-size: 2rem;
   }
 }

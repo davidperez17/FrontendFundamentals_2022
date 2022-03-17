@@ -223,5 +223,23 @@
         <h1>ABOUT US</h1>
       </div>
     </footer>
+
+    <i id="btn__scroll" class="fa-solid fa-arrow-up button__scroll"></i>
+
+    <script>
+      const btnScrollToTop = document.querySelector("#btn__scroll");
+
+      btnScrollToTop.addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
+    <script
+      src="https://kit.fontawesome.com/8af7e68d52.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
